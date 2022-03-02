@@ -1,0 +1,74 @@
+@import '../../styles/variables';
+
+@keyframes showBackdrop {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showModal {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.041);
+  transition: all 0.3s;
+
+  animation: showBackdrop 0.3s ease-out;
+}
+
+.modal {
+  background: $backgroundModal;
+  width: 530px;
+  height: 500px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 1.144);
+  border-radius: 35px;
+  transition: all 0.3s;
+
+  animation: showModal 0.3s ease-out;
+}
+
+.modalBigSize {
+  background: $backgroundModal;
+  width: 730px;
+  height: 600px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 1.244);
+  border-radius: 35px;
+  transition: all 0.3s;
+
+  animation: showModal 0.3s ease-out;
+}
+
+.backdropHide {
+  opacity: 0;
+}
+
+.backdropHide .modal {
+  opacity: 0;
+  transform: translateY(-500px);
+}
+
+.backdropHide .modalBigSize {
+  opacity: 0;
+  transform: translateY(-500px);
+}

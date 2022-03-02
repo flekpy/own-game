@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.personCabinet {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+}
+
+ .personCabinet__startBtn {
+  background-color: $violet;
+  height: 50px;
+  width: 270px;
+  border-radius: 23px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+}

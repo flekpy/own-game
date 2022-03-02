@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.questionsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.games__scores {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.games__btn {
+  margin-top: 20px;
+  background-color: $violet;
+  height: 50px;
+  width: 250px;
+  border-radius: 23px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+}
+
+.save {
+  color:  $lightGray;
+  margin-top: 10px;
+}

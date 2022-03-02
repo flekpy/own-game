@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+.answerList {
+  display: flex;
+  flex-direction: column;
+}
+
+.answerTitle {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 29px;
+  color: $lightGray;
+  background-color: $gray;
+  padding: 25px;
+  text-align: center;
+  border-radius: 28px;
+}
+
+.containerQuest {
+  margin-left: 35px;
+}
+
+.questionList {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.questionItem {
+  margin-right: 30px;
+  min-width: 130px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 29px;
+  color: $lightGray;
+  background-color: $gray;
+  padding: 25px;
+  text-align: center;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.questionItem:hover {
+  color: red;
+}
